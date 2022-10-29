@@ -13,12 +13,12 @@ An I.T grad with a focus in software development, analytics, machine learning, a
 <img align="right" alt="Coding" width="400" height="400"  src="https://user-images.githubusercontent.com/70679348/198842776-81c01426-a16f-4cc6-a4a1-ec3c69e52e35.gif">
 
 ## About me
-🔭&nbsp;I’m currently working on **Data Analytics **
+🔭&nbsp;I’m currently working on **Data Analytics**
 <br/>🎓&nbsp;Graduated in **Information Technology at RJC (But just in 2022😅)**
 <br/>🌱&nbsp;Learning about **Data Science and M.L & A.I development**
 <br/>💡&nbsp;I'm interested about **Tech, Metaverse and Films**
 <br/>💬&nbsp;Ask me about **Data modelling**
-<br/>🤝&nbsp;I like to collaborate in **End to end prediction models **
+<br/>🤝&nbsp;I like to collaborate in **End to end prediction models**
 <br/>⚡&nbsp;Fun fact **I do projects that scares me the most 🤪**
 <br/>📧&nbsp;[dharmeshkashyap46@gmail.com](mailto:dharmeshkashyap46@gmail.com)
 <br/>🖥&nbsp; See my portfolio at [www.dff.ccom](www.dff.ccom)
