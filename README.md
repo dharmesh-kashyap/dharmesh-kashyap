@@ -11,6 +11,7 @@ An I.T grad with a focus in software development, analytics, machine learning, a
 ![Profile Views](https://komarev.com/ghpvc/?username=dharmesh-kashyap&theme=default&color=blue&style=flat&label=Profile+Views)
 
 ## About me
+<img align="right" alt="Coding" src="https://user-images.githubusercontent.com/70679348/198842776-81c01426-a16f-4cc6-a4a1-ec3c69e52e35.gif">
 🔭&nbsp;I’m currently working on **Data Analytics **
 <br/>🎓&nbsp;Graduated in **Information Technology at RJC (But just in 2022😅)**
 <br/>🌱&nbsp;Learning about **Data Science and M.L & A.I development**
