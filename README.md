@@ -6,7 +6,7 @@
 <a href="https://www.instagram.com/dharmesh__kashyap" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white" alt="Instagram Badge" height="25"></a>&nbsp;
 
 ##  Hello 👋, I'm Dharmesh kashyap
-I.T grad with a focus in software development, analytics, machine learning, and A.I
+An I.T grad with a focus in software development, analytics, machine learning, and A.I
 
 ![Profile Views](https://komarev.com/ghpvc/?username=dharmesh-kashyap&theme=default&color=blue&style=flat&label=Profile+Views)
 
@@ -17,7 +17,6 @@ I.T grad with a focus in software development, analytics, machine learning, and 
 <br/>💡&nbsp;I'm interested about **Tech, Metaverse and Films**
 <br/>💬&nbsp;Ask me about **Data modelling**
 <br/>🤝&nbsp;I like to collaborate in **End to end prediction models **
-<br/>😄&nbsp;Pronouns **He/His**
 <br/>⚡&nbsp;Fun fact **I do projects that scares me the most 🤪**
 <br/>📧&nbsp;[dharmeshkashyap46@gmail.com](mailto:dharmeshkashyap46@gmail.com)
 <br/>🖥&nbsp; See my portfolio at [www.dff.ccom](www.dff.ccom)
