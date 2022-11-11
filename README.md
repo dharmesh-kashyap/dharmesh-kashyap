@@ -21,7 +21,7 @@ An I.T grad with a focus in software development, analytics, machine learning, a
 <br/>🤝&nbsp;I like to collaborate in **End to end prediction models**
 <br/>⚡&nbsp;Fun fact **I do projects that scares me the most 🤪**
 <br/>📧&nbsp;[dharmeshkashyap46@gmail.com](mailto:dharmeshkashyap46@gmail.com)
-<br/>🖥&nbsp; See my portfolio at [www.dff.ccom](www.dff.ccom)
+<br/>🖥&nbsp; See my portfolio at [https://dharmesh-kashyap.vercel.app/](https://dharmesh-kashyap.vercel.app/)
 
 ## Tech Stack
 <img src="https://img.shields.io/badge/Arduino-05122A?style=flat&logo=arduino" alt="arduino Badge" height="25">&nbsp;
