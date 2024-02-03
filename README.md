@@ -14,7 +14,7 @@ An I.T grad with a focus in software development, analytics, machine learning, a
 
 ## About me
 🔭&nbsp;I’m currently working on **Data Analytics**
-<br/>🎓&nbsp;Graduated in **Information Technology at RJC (But just in 2022😅)**
+<br/>🎓&nbsp;Graduated in **Information Technology at RJC**
 <br/>🌱&nbsp;Learning about **Data Science and M.L & A.I development**
 <br/>💡&nbsp;I'm interested about **Tech, Metaverse and Films**
 <br/>💬&nbsp;Ask me about **Data modelling**
