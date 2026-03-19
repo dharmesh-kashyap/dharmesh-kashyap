@@ -22,6 +22,14 @@ If a workflow can be automated, it will be. That's not a preference, it's a stan
 
 ---
 
+## Currently Working On
+
+- Scaling ETL pipeline architecture for multi-client financial data ingestion
+- Deepening work in data quality frameworks and automated validation layers
+- Expanding Streamlit tooling for internal ops and client-facing analytics
+
+---
+
 ## Delivered Impact
 
 | Domain | Scope | Output |
@@ -95,14 +103,6 @@ If a workflow can be automated, it will be. That's not a preference, it's a stan
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=dharmesh-kashyap&layout=compact&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=8B949E)
 
 </div>
-
----
-
-## Currently Working On
-
-- Scaling ETL pipeline architecture for multi-client financial data ingestion
-- Deepening work in data quality frameworks and automated validation layers
-- Expanding Streamlit tooling for internal ops and client-facing analytics
 
 ---
 
