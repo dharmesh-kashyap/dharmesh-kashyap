@@ -121,7 +121,7 @@ Dimensional modelling (staging, dimension/fact) · data validation · SQL query 
 
 <div align="center">
 
-<img src="assets/continue.svg" alt="Messy data? Let's talk." width="100%" />
+<img src="assets/continue_2.svg" alt="Messy data? Let's talk." width="100%" />
 
 <sub>MCA, Manipal Institute of Technology, MAHE (2023 to 2025) · B.Sc. IT, R. J. College, University of Mumbai (2019 to 2022) · Modern Application Development with Python on AWS · Applied Data Science with Python</sub>
 
