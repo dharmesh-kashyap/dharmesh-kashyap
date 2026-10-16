@@ -1,143 +1,108 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1420,60:12304a,100:38bdf8&height=190&section=header&text=Dharmesh%20Kashyap&fontSize=44&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Data%20Engineer%20%C2%B7%20Mumbai&descAlignY=60&descSize=16" width="100%" alt="Dharmesh Kashyap, Data Engineer, Mumbai" />
+<img src="assets/hero.svg" alt="Dharmesh Kashyap, Data Engineer. Raw data in. Decision-ready assets out." width="100%" />
 
-<img src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=600&size=15&duration=2600&pause=1000&color=38BDF8&center=true&vCenter=true&width=760&lines=%24+whoami+%E2%86%92+data+engineer;%24+cat+problems.txt+%E2%86%92+670K+village+boundaries%2C+2%2C500%2B+scheme+PDFs%2C+5+survey+formats;%24+tail+-f+pipeline.log+%E2%86%92+PySpark+%C2%B7+Polars+%C2%B7+DuckDB+%C2%B7+PostgreSQL;%24+echo+%22the+data+was+never+clean.+the+schema+is.%22" alt="terminal typing animation" />
-
-<br/>
-
-[![Portfolio](https://img.shields.io/badge/portfolio-dharmeshkashyap.work-0d1420?style=for-the-badge&logo=vercel&logoColor=38BDF8)](https://dharmeshkashyap.work)
-[![LinkedIn](https://img.shields.io/badge/linkedin-dharmesh--kashyap-0d1420?style=for-the-badge&logo=linkedin&logoColor=38BDF8)](https://linkedin.com/in/dharmesh-kashyap)
-[![Mail](https://img.shields.io/badge/mail-dharmeshkashyap46@gmail.com-0d1420?style=for-the-badge&logo=gmail&logoColor=38BDF8)](mailto:dharmeshkashyap46@gmail.com)
+[![Portfolio](https://img.shields.io/badge/portfolio-dharmeshkashyap.work-131417?style=for-the-badge&logo=vercel&logoColor=38BDF8)](https://dharmeshkashyap.work)
+[![LinkedIn](https://img.shields.io/badge/linkedin-dharmesh--kashyap-131417?style=for-the-badge&logo=linkedin&logoColor=38BDF8)](https://linkedin.com/in/dharmesh-kashyap)
+[![Resume](https://img.shields.io/badge/resume-download_pdf-131417?style=for-the-badge&logo=adobeacrobatreader&logoColor=38BDF8)](https://www.dharmeshkashyap.work/assets/Dharmesh_Kashyap_Resume.pdf)
+[![Mail](https://img.shields.io/badge/mail-dharmeshkashyap46@gmail.com-131417?style=for-the-badge&logo=gmail&logoColor=38BDF8)](mailto:dharmeshkashyap46@gmail.com)
 
 </div>
 
----
+**Data Engineer at Seamless Digital Automations, Mumbai (since Feb 2025).** I build pipelines, warehouses and validation systems that make difficult data dependable: government surveys, scheme PDFs, boundary files and Excel uploads. The inputs are never clean, so the work is in making the output trustworthy.
 
-## `extract()` · who I am
+<img src="assets/achievements.svg" alt="Achievements unlocked: 670K+ village boundaries, 5.2M+ warehouse records, 2,500+ scheme PDFs, 298 harmonised variables, 5 surveys across 3 rounds, 60+ mutual fund instruments" width="100%" />
 
-```text
-dharmesh@mumbai:~$ whoami
-dharmesh kashyap, data engineer at Seamless Digital Automations
+<br/>
 
-dharmesh@mumbai:~$ cat about.txt
-I get handed data that was never meant to be read by a machine:
-national survey microdata with a different layout every round,
-government PDFs, village boundaries that disagree with each other.
-I turn it into schemas, pipelines and tables people can query
-without cleaning anything first.
+<img src="assets/levels.svg" alt="Level select: Extract, Transform, Load, Serve" width="100%" />
 
-dharmesh@mumbai:~$ cat status.txt
-open to Data Engineer roles
-Mumbai / Navi Mumbai / Pune / Bangalore / Hyderabad / Remote (India)
-```
+| Level | What happens | Tools |
+|:---|:---|:---|
+| **1 · Extract** | Boundary files for 670K+ villages, 2,500+ scheme PDFs, 60+ mutual fund instruments. Validation checks surface problems at the door. | Python, GeoJSON, validation |
+| **2 · Transform** | HCES, ASUSE, AIDIS, SAS and Agriculture Census across 3 NSO/MoSPI rounds into one long-format schema. A 298-variable DDI dictionary keeps definitions steady. | PySpark, Hadoop, Polars, DuckDB, Parquet |
+| **3 · Load** | PostgreSQL warehouse over 5.2M+ records. Staging tables promoted into dimension and fact tables through a multi-step pipeline. | PostgreSQL, Flask, SQL |
+| **4 · Serve** | KPI dashboards with drill-downs. AIV Hub on AWS-hosted servers, with written network and firewall requirements after a cross-subnet routing failure. | Tableau, AIV Hub, AWS |
 
-```sql
-SELECT title, employer, since, clients
-FROM   dharmesh
-WHERE  status = 'open_to_work';
-```
+<br/>
 
-| title | employer | since | clients |
-|:---|:---|:---|:---|
-| Software Developer (Data Engineer) | Seamless Digital Automations, Mumbai | Feb 2025 | NABARD, ICICI Prudential |
+<img src="assets/wide-to-long.svg" alt="Survey data unpivoted from wide format to a consistent long format. Illustrative values." width="100%" />
 
 ---
 
-## `transform()` · the work
+## Quests
 
-### Test report
+<details>
+<summary><b>Survey ETL · NABARD</b></summary>
 
-```text
-============ tests/test_dharmesh.py ============
-test_5_nso_surveys_3_rounds_one_long_format_schema ... PASSED
-test_298_harmonised_variables_across_hces_rounds ..... PASSED
-test_staging_to_dim_fact_warehouse_5_2M_records ...... PASSED
-test_670K_village_boundaries_delivered_as_geojson .... PASSED
-test_2500_scheme_pdfs_extracted_with_validation ...... PASSED
-test_60_mutual_fund_instruments_monthly_pipeline ..... PASSED
-test_bi_server_on_aws_setup_config_monitoring ........ PASSED
-test_cross_subnet_routing_failure_diagnosed .......... PASSED
-================== 8 passed ====================
-```
+<br/>
 
-### Case files
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-**🗂 CASE 01 · Survey ETL**
-`NABARD`
-
-Five All-India NSO/MoSPI surveys (HCES, ASUSE, AIDIS, SAS, Agriculture Census), three rounds, one schema.
-
-PySpark on Hadoop does the heavy lifting. Polars and DuckDB handle transformation and validation. Output is long-format Parquet that BI tools read directly. The HCES pipeline ships as a tested Python package, and a 298-variable DDI dictionary keeps definitions consistent from round to round.
+- Distributed PySpark/Hadoop pipelines for 5 All-India NSO/MoSPI surveys (HCES, ASUSE, AIDIS, SAS, Agriculture Census) across 3 rounds. Polars and DuckDB handle downstream transformation and validation.
+- One standardised long-format schema that BI tools consume directly. Parquet recommended over CSV for delivery.
+- HCES pipeline packaged as a modular Python ETL package with a full test suite.
+- DDI enrichment dictionary of 298 harmonised variables across 3 HCES rounds.
 
 `PySpark` `Hadoop` `Polars` `DuckDB` `Parquet`
 
-</td>
-<td width="50%" valign="top">
+</details>
 
-**🏦 CASE 02 · Finance warehouse**
-`ICICI Prudential`
+<details>
+<summary><b>Data Processor · ICICI Prudential · 2025 to 2026</b></summary>
 
-A PostgreSQL schema for 5.2M+ records. Staging tables promote into dimension and fact tables through a multi-step pipeline, with query optimisation for analytics.
+<br/>
 
-Wrapped in a Flask app that ingests Excel uploads, validates them, reports conflicts, and shows scheduler and refresh progress. Duplicate-promotion and staging-filter bugs were found in an audit and fixed.
+- Finance teams were uploading Excel files by hand. This Flask + PostgreSQL app takes Admin Dump and Location Vacation files into staging tables, validates them, and promotes them into a dimension/fact warehouse through a multi-step pipeline.
+- Added scheduler visibility, refresh progress, conflict reporting and a notification tray.
+- Audited the pipeline and fixed duplicate-promotion and staging-filter bugs.
 
-`PostgreSQL` `Flask` `SQL` `Python`
+`Flask` `PostgreSQL` `SQL` `Python`
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+</details>
 
-**🗺 CASE 03 · Village boundaries**
-`NABARD`
+<details>
+<summary><b>News Intelligence Platform · NABARD · 2026</b></summary>
 
-670K+ Pan-India village boundaries as structured GeoJSON for geospatial reporting, from raw spatial data that was inconsistent at the source.
+<br/>
 
-`Python` `GeoJSON` `ETL`
-
-</td>
-<td width="50%" valign="top">
-
-**📄 CASE 04 · Scheme PDFs + fund data**
-`NABARD`
-
-2,500+ government scheme PDFs extracted with validation checks. 60+ mutual fund instruments consolidated into one schema by a recurring automated pipeline.
-
-`Python` `ETL` `Data Validation`
-
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">
-
-**📰 CASE 05 · News intelligence platform**
-`NABARD`
-
-Multi-source scraper that extracts, cleans and structures articles into a database feeding a live dashboard. AI enrichment adds classification, summarisation and search, plus an interactive commodities ticker.
+- Multi-source scraper that extracts, cleans and structures articles into a database feeding a live dashboard.
+- AI enrichment for classification, summarisation and search, plus an interactive commodities ticker.
 
 `Python` `PostgreSQL` `LLM APIs`
 
-</td>
-</tr>
-</table>
+</details>
 
-### Tools by layer
+<details>
+<summary><b>Earlier quests</b></summary>
 
-| Layer | What I use |
-|:---|:---|
-| **Process** | ![PySpark](https://img.shields.io/badge/PySpark-0d1420?style=flat-square&logo=apachespark&logoColor=38BDF8) ![Hadoop](https://img.shields.io/badge/Hadoop-0d1420?style=flat-square&logo=apachehadoop&logoColor=38BDF8) ![Polars](https://img.shields.io/badge/Polars-0d1420?style=flat-square&logo=polars&logoColor=38BDF8) ![DuckDB](https://img.shields.io/badge/DuckDB-0d1420?style=flat-square&logo=duckdb&logoColor=38BDF8) ![Python](https://img.shields.io/badge/Python-0d1420?style=flat-square&logo=python&logoColor=38BDF8) |
-| **Store** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1420?style=flat-square&logo=postgresql&logoColor=38BDF8) ![MySQL](https://img.shields.io/badge/MySQL-0d1420?style=flat-square&logo=mysql&logoColor=38BDF8) ![Parquet](https://img.shields.io/badge/Parquet-0d1420?style=flat-square&logo=apache&logoColor=38BDF8) |
-| **Serve** | ![Flask](https://img.shields.io/badge/Flask-0d1420?style=flat-square&logo=flask&logoColor=38BDF8) ![Tableau](https://img.shields.io/badge/Tableau-0d1420?style=flat-square&logo=tableau&logoColor=38BDF8) ![AWS](https://img.shields.io/badge/AWS-0d1420?style=flat-square&logo=amazonaws&logoColor=38BDF8) |
-| **Practice** | dimensional modelling · data validation · SQL query optimisation · KPI dashboards |
+<br/>
+
+- [Lead Generation Automation](https://github.com/dharmesh-kashyap/lead-generation-automation): scraping and enrichment pipeline
+- [COVID-19 Mortality Analysis](https://public.tableau.com/app/profile/dharmesh.kashyap/viz/CoronaVirusdeathreport/Dashboard1): Tableau dashboard
+- [Airbnb Pricing Intelligence](https://public.tableau.com/app/profile/dharmesh.kashyap/viz/AirBNBPriceVariation_/Dashboard1): Tableau dashboard
+
+</details>
 
 ---
 
-## Contribution log
+## Inventory
+
+![Python](https://img.shields.io/badge/Python-131417?style=flat-square&logo=python&logoColor=38BDF8)
+![SQL](https://img.shields.io/badge/SQL-131417?style=flat-square&logo=databricks&logoColor=38BDF8)
+![PySpark](https://img.shields.io/badge/PySpark-131417?style=flat-square&logo=apachespark&logoColor=38BDF8)
+![Hadoop](https://img.shields.io/badge/Hadoop-131417?style=flat-square&logo=apachehadoop&logoColor=38BDF8)
+![Polars](https://img.shields.io/badge/Polars-131417?style=flat-square&logo=polars&logoColor=38BDF8)
+![DuckDB](https://img.shields.io/badge/DuckDB-131417?style=flat-square&logo=duckdb&logoColor=38BDF8)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-131417?style=flat-square&logo=postgresql&logoColor=38BDF8)
+![MySQL](https://img.shields.io/badge/MySQL-131417?style=flat-square&logo=mysql&logoColor=38BDF8)
+![Flask](https://img.shields.io/badge/Flask-131417?style=flat-square&logo=flask&logoColor=38BDF8)
+![AWS](https://img.shields.io/badge/AWS-131417?style=flat-square&logo=amazonaws&logoColor=38BDF8)
+![Tableau](https://img.shields.io/badge/Tableau-131417?style=flat-square&logo=tableau&logoColor=38BDF8)
+
+Dimensional modelling (staging, dimension/fact) · data validation · SQL query optimisation · KPI dashboards
+
+---
+
+## Save point
 
 <div align="center">
 
@@ -147,25 +112,17 @@ Multi-source scraper that extracts, cleans and structures articles into a databa
   <img alt="contribution snake" src="https://raw.githubusercontent.com/dharmesh-kashyap/dharmesh-kashyap/output/github-snake-dark.svg" />
 </picture>
 
-<img src="https://github-readme-stats.vercel.app/api?username=dharmesh-kashyap&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1420&title_color=38bdf8&icon_color=38bdf8&text_color=94a3b8" height="165" alt="GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dharmesh-kashyap&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1420&title_color=38bdf8&text_color=94a3b8&langs_count=6" height="165" alt="Top languages" />
+<img src="https://github-readme-stats.vercel.app/api?username=dharmesh-kashyap&show_icons=true&theme=github_dark&hide_border=true&bg_color=131417&title_color=38bdf8&icon_color=38bdf8&text_color=94a3b8" height="165" alt="GitHub stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dharmesh-kashyap&layout=compact&theme=github_dark&hide_border=true&bg_color=131417&title_color=38bdf8&text_color=94a3b8&langs_count=6&hide=jupyter%20notebook" height="165" alt="Top languages" />
 
 </div>
 
 ---
 
-## `load()` · let's talk
+<div align="center">
 
-```text
-dharmesh@mumbai:~$ ./contact.sh
-> roles    : Data Engineer (pipelines, warehousing, survey and geospatial data)
-> where    : Mumbai / Navi Mumbai / Pune / Bangalore / Hyderabad / Remote (India)
-> mail     : dharmeshkashyap46@gmail.com
-> linkedin : linkedin.com/in/dharmesh-kashyap
-> web      : dharmeshkashyap.work
-exit 0
-```
+<img src="assets/continue.svg" alt="Messy data? Let's talk." width="100%" />
 
 <sub>MCA, Manipal Institute of Technology, MAHE (2023 to 2025) · B.Sc. IT, R. J. College, University of Mumbai (2019 to 2022) · Modern Application Development with Python on AWS · Applied Data Science with Python</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:38bdf8,60:12304a,100:0d1420&height=110&section=footer" width="100%" alt="" />
+</div>
