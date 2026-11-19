@@ -11,7 +11,7 @@
 
 **Data Engineer at Seamless Digital Automations, Mumbai (since Feb 2025).** I build pipelines, warehouses and validation systems that make difficult data dependable: government surveys, scheme PDFs, boundary files and Excel uploads. The inputs are never clean, so the work is in making the output trustworthy.
 
-<img src="assets/achievements.svg" alt="Achievements unlocked: 670K+ village boundaries, 5.2M+ warehouse records, 2,500+ scheme PDFs, 298 harmonised variables, 5 surveys across 3 rounds, 60+ mutual fund instruments" width="100%" />
+<img src="assets/achievements.svg" alt="Achievements unlocked: 670K+ village boundaries, 13.3M+ warehouse records, 2,500+ scheme PDFs, 298 harmonised variables, 5 surveys across 3 rounds, 60+ mutual fund instruments" width="100%" />
 
 <br/>
 
@@ -20,8 +20,8 @@
 | Level | What happens | Tools |
 |:---|:---|:---|
 | **1 · Extract** | Boundary files for 670K+ villages, 2,500+ scheme PDFs, 60+ mutual fund instruments. Validation checks surface problems at the door. | Python, GeoJSON, validation |
-| **2 · Transform** | HCES, ASUSE, AIDIS, SAS and Agriculture Census across 3 NSO/MoSPI rounds into one long-format schema. A 298-variable DDI dictionary keeps definitions steady. | PySpark, Hadoop, Polars, DuckDB, Parquet |
-| **3 · Load** | PostgreSQL warehouse over 5.2M+ records. Staging tables promoted into dimension and fact tables through a multi-step pipeline. | PostgreSQL, Flask, SQL |
+| **2 · Transform** | HCES, ASUSE, AIDIS, SAS and Agriculture Census across 3 NSO/MoSPI rounds into one long-format schema. A 298-variable DDI dictionary keeps definitions steady. | PySpark, Databricks, Polars, DuckDB, Parquet |
+| **3 · Load** | PostgreSQL warehouse over 13.3M+ records. Staging tables promoted into dimension and fact tables through a multi-step pipeline. | PostgreSQL, Flask, SQL |
 | **4 · Serve** | KPI dashboards with drill-downs. AIV Hub on AWS-hosted servers, with written network and firewall requirements after a cross-subnet routing failure. | Tableau, AIV Hub, AWS |
 
 <br/>
@@ -32,68 +32,63 @@
 
 ## Quests
 
-<details>
-<summary><b>Survey ETL · NABARD</b></summary>
+### Survey ETL · NABARD
 
-<br/>
-
-- Distributed PySpark/Hadoop pipelines for 5 All-India NSO/MoSPI surveys (HCES, ASUSE, AIDIS, SAS, Agriculture Census) across 3 rounds. Polars and DuckDB handle downstream transformation and validation.
-- One standardised long-format schema that BI tools consume directly. Parquet recommended over CSV for delivery.
-- HCES pipeline packaged as a modular Python ETL package with a full test suite.
+- PySpark ETL pipelines on Databricks that harmonise microdata from 5 NSO/MoSPI survey series (HCES, ASUSE, AIDIS, SAS, Agriculture Census) across 3 rounds. Polars and DuckDB handle downstream transformation and validation.
+- One standardised long-format schema with consistent variables across rounds, so BI tools can consume the output directly. Parquet recommended over CSV for delivery.
+- HCES pipeline packaged as a reusable Python ETL package: extraction, transformation and validation kept as separate modules, with pytest-based tests for transformation consistency.
 - DDI enrichment dictionary of 298 harmonised variables across 3 HCES rounds.
 
-`PySpark` `Hadoop` `Polars` `DuckDB` `Parquet`
+`PySpark` `Databricks` `Polars` `DuckDB` `Parquet` `pytest`
 
-</details>
+### Finance Warehouse · ICICI Prudential
 
-<details>
-<summary><b>Data Processor · ICICI Prudential · 2025 to 2026</b></summary>
+- PostgreSQL schema for 13.3M+ records: staging tables promoted into dimension and fact tables through a multi-step pipeline.
+- Query optimisation for analytics workloads.
 
-<br/>
+`PostgreSQL` `SQL` `Dimensional modelling`
 
-- Finance teams were uploading Excel files by hand. This Flask + PostgreSQL app takes Admin Dump and Location Vacation files into staging tables, validates them, and promotes them into a dimension/fact warehouse through a multi-step pipeline.
-- Added scheduler visibility, refresh progress, conflict reporting and a notification tray.
-- Audited the pipeline and fixed duplicate-promotion and staging-filter bugs.
+### Extraction Pipelines · NABARD
 
-`Flask` `PostgreSQL` `SQL` `Python`
+- ETL for 670K+ Pan-India GeoJSON village boundaries, feeding NABARD geospatial reporting.
+- Extraction with validation checks for 2,500+ government scheme PDFs.
+- Recurring automated pipeline consolidating 60+ mutual fund instruments into one schema.
 
-</details>
+`Python` `GeoJSON` `Validation`
 
-<details>
-<summary><b>News Intelligence Platform · NABARD · 2026</b></summary>
+### Data Processor · ICICI Prudential · 2025 to 2026
 
-<br/>
+- Finance teams were uploading Excel files by hand. This Flask + PostgreSQL platform takes Admin Dump and Location Vacation files into staging tables, validates them, and promotes them into the dimensional warehouse in a controlled way.
+- Added scheduled-refresh visibility, ingestion progress tracking, data conflict reporting and a notification tray.
+- Investigated and fixed duplicate-promotion and staging-filter issues that were affecting data reliability.
 
-- Multi-source scraper that extracts, cleans and structures articles into a database feeding a live dashboard.
+`Python` `Flask` `PostgreSQL` `Excel ingestion` `Scheduler`
+
+### News Intelligence Platform · NABARD · 2026
+
+- Multi-source scraper that extracts, cleans and structures articles into a database feeding a live Streamlit dashboard.
 - AI enrichment for classification, summarisation and search, plus an interactive commodities ticker.
 
-`Python` `PostgreSQL` `LLM APIs`
+`Python` `Playwright` `PostgreSQL` `Groq API` `Streamlit`
 
-</details>
+### BI & Infrastructure
 
-<details>
-<summary><b>Earlier quests</b></summary>
+- KPI dashboards with drill-downs.
+- AIV Hub deployed on AWS-hosted servers: setup, configuration and monitoring. Documented network and firewall requirements after diagnosing a cross-subnet routing failure.
 
-<br/>
-
-- [Lead Generation Automation](https://github.com/dharmesh-kashyap/lead-generation-automation): scraping and enrichment pipeline
-- [COVID-19 Mortality Analysis](https://public.tableau.com/app/profile/dharmesh.kashyap/viz/CoronaVirusdeathreport/Dashboard1): Tableau dashboard
-- [Airbnb Pricing Intelligence](https://public.tableau.com/app/profile/dharmesh.kashyap/viz/AirBNBPriceVariation_/Dashboard1): Tableau dashboard
-
-</details>
+`Tableau` `AIV Hub` `AWS`
 
 ---
 
 ## Inventory
 
 ![Python](https://img.shields.io/badge/Python-131417?style=flat-square&logo=python&logoColor=38BDF8)
-![SQL](https://img.shields.io/badge/SQL-131417?style=flat-square&logo=databricks&logoColor=38BDF8)
+![SQL](https://img.shields.io/badge/SQL-131417?style=flat-square&logo=sqlite&logoColor=38BDF8)
 ![PySpark](https://img.shields.io/badge/PySpark-131417?style=flat-square&logo=apachespark&logoColor=38BDF8)
-![Hadoop](https://img.shields.io/badge/Hadoop-131417?style=flat-square&logo=apachehadoop&logoColor=38BDF8)
+![Databricks](https://img.shields.io/badge/Databricks-131417?style=flat-square&logo=databricks&logoColor=38BDF8)
 ![Polars](https://img.shields.io/badge/Polars-131417?style=flat-square&logo=polars&logoColor=38BDF8)
 ![DuckDB](https://img.shields.io/badge/DuckDB-131417?style=flat-square&logo=duckdb&logoColor=38BDF8)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-131417?style=flat-square&logo=postgresql&logoColor=38BDF8)
-![MySQL](https://img.shields.io/badge/MySQL-131417?style=flat-square&logo=mysql&logoColor=38BDF8)
 ![Flask](https://img.shields.io/badge/Flask-131417?style=flat-square&logo=flask&logoColor=38BDF8)
 ![AWS](https://img.shields.io/badge/AWS-131417?style=flat-square&logo=amazonaws&logoColor=38BDF8)
 ![Tableau](https://img.shields.io/badge/Tableau-131417?style=flat-square&logo=tableau&logoColor=38BDF8)
